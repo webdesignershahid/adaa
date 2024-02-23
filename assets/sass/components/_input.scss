@@ -1,0 +1,68 @@
+/*-------------------------------------------------
+    [ ## Fields ]
+---------------------------------------------------*/
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+    font-size: 1.6rem;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        background-color: transparent;
+    }
+}
+input[type=time]::-webkit-inner-spin-button, 
+input[type=time]::-webkit-outer-spin-button,
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input:-webkit-autofill,
+input[type="text"]:-webkit-autofill,
+input[type="email"]:-webkit-autofill,
+input[type="url"]:-webkit-autofill,
+input[type="password"]:-webkit-autofill,
+input[type="search"]:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    color: black;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+.form-control {
+    font-size: 1.6rem;
+}
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 1.6rem;
+}
+textarea.form-control {
+    display: block;
+    width: 100%;
+    display: block;
+    padding-top: 0;
+    font-size: 1.6rem;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+.form-floating > .form-control {
+    border: none;
+    border-bottom: 1px solid rgba(#000,0.1);
+    border-radius: 0;
+}

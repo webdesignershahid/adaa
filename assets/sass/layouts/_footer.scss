@@ -1,0 +1,36 @@
+/*--------------------------------------------------------------
+    [ ## Footer ]
+--------------------------------------------------------------*/
+footer {
+    background-color: var(--color__primary);
+
+    .footer-top {
+        padding: 5rem 0;
+
+        .footer-menu {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            a {
+                font-family: var(--font-dinpro);
+                padding: 1rem 1.7rem;
+                transition: all 0.25s;
+                color: var(--color__white);
+                font-size: 1.4rem;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        color: white;
+        border-top: .1rem solid white;
+        padding: 1.5rem 0;
+        
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}

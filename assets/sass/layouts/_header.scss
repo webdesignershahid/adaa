@@ -1,0 +1,155 @@
+/*--------------------------------------------------------------
+    [ ## Header ]
+--------------------------------------------------------------*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1024;
+    padding: 1.5rem 0;
+    transition: all .25s ease;
+    background-color: var(--color__white);
+    .nav-menu {
+        display: flex;
+    }
+    .site-menu {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        a {
+            font-family: var(--font-dinpro);
+            padding: 1rem 1.7rem;
+            transition: all 0.25s;
+
+            &:hover {
+                color: var(--color__primary);
+            }
+            &.lang {
+                font-family: var(--font-dinarab);
+                padding: 1.1rem 3rem 1.8rem;
+                font-weight: 600;
+                line-height: 1;
+                @include sm-down {
+                    padding: 1.1rem 2rem 1.8rem;
+                }
+            }
+
+        }
+
+    }
+    .nav-menu {
+        @include lg-down {
+            display: none;
+        }
+    }
+    .button-group {
+        display: flex;
+        align-items: center;
+        gap: 1.3rem;
+        a {
+            border: .1rem solid var(--color__primary);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2rem;
+            @include sm-down {
+                font-size: 1.4rem;
+            }
+            &:hover {
+                background-color: var(--color__primary);
+                color: var((--color__white));
+            }
+        }
+    }
+    .nav {
+        justify-content: space-between;        
+    }
+    .site-logo {
+        outline: none;
+        user-select: none;
+        @include sm-down {
+            max-width: 4rem;
+        }
+    }
+    .menu-toggler {
+        border: .1rem solid var(--color__primary);
+        padding: 0;
+        background-color: transparent;
+        width: 4.5rem;
+        height: 4.5rem;
+        display: grid;
+        place-content: center;
+        border-radius: .5rem;
+
+        @include lg-up {
+            display: none;
+        }
+    }
+    &.sticky {
+        box-shadow: 0 .5rem 1rem 0 rgba(#000,.15);
+    }
+   
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -40rem;
+    bottom: 0;
+    height: 100%;
+    background-color: var(--color__white);
+    z-index: 1024;
+    width: 40rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 1rem rgba(#000,.15); 
+    transition: all .25s ease-in-out;
+
+    &.is-menu-open {
+        left: 0;
+    }
+
+    .nav-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+        border-bottom: .1rem solid rgba(#000,.15);
+        padding-bottom: 2rem;
+        img {
+            max-width: 15rem;
+        }
+        button {
+            border: 0;
+            background-color: var(--color__black);
+            color: var(--color__white);
+            box-shadow: none;
+            width: 4rem;
+            height: 4rem;
+            display: grid;
+            place-content: center;
+            font-size: 3rem;
+            line-height: 1;
+            padding: 0;
+        }
+    }
+    .menu-title {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        border-bottom: .1rem solid var(--color__primary);
+        padding-bottom: .5rem;
+    }
+    .nav-menu {
+        li {
+            & + li {
+                margin: 2rem 0;
+            }
+        }
+        a {
+            font-size: 1.8rem;
+            padding: 1rem 0;
+            font-weight: 600;
+        }
+    }
+}

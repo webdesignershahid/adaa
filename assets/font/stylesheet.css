@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'DIN';
+    src: local('DIN Medium'), local('DIN-Medium'),
+        url('DIN-Medium.woff2') format('woff2'),
+        url('DIN-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    src: local('DIN Pro'), local('DINPro'),
+        url('DINPro.woff2') format('woff2'),
+        url('DINPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN';
+    src: local('DIN Bold'), local('DINBold'),
+        url('DINBold.woff2') format('woff2'),
+        url('DINBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN';
+    src: local('DIN'),
+        url('DIN.woff2') format('woff2'),
+        url('DIN.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN AR';
+    src: url('ntaqat.woff2') format('woff2'),
+        url('ntaqat.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

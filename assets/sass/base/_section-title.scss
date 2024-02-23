@@ -1,0 +1,13 @@
+.section-title {
+    margin-bottom: 5rem;
+    .subtitle {
+        color: var(--color__secondary);
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+    .title {
+        color: var(--color__primary);
+        font-size: 3rem;
+        font-weight: 500;
+    }
+}

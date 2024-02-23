@@ -1,0 +1,78 @@
+.topbutton {
+    position: fixed;
+    right: 2rem;
+    bottom: 4rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    @include flex-center;
+    color: var(--color__white);
+    z-index: 1024;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+
+    &:hover {
+        color: var(--color__white);
+    }
+    &.btn-show {
+        opacity: 1;
+        visibility: visible;
+        bottom: 3rem;
+    }
+}
+
+
+.btn_primary {
+    border: .1rem solid var(--color__primary);
+    border-radius: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    color: var(--color__primary);
+    transition: all .25s ease;
+    @include sm-down {
+        font-size: 1.4rem;
+    }
+    &:hover {
+        background-color: var(--color__primary);
+        color: var(--color__white);
+    }
+}
+.btn_primary_alt {
+    border: .1rem solid var(--color__white);
+    border-radius: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    color: var(--color__white);
+    transition: all .25s ease;
+    @include sm-down {
+        font-size: 1.4rem;
+    }
+    &:hover {
+        background-color: var(--color__primary);
+        color: var(--color__white);
+    }
+}
+.btn_secondary {
+    border: .1rem solid var(--color__primary);
+    border-radius: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    color: var(--color__white);
+    background-color: var(--color__primary);
+    transition: all .25s ease;
+    @include sm-down {
+        font-size: 1.4rem;
+    }
+    &:hover {
+        background-color: var(--color__white);
+        color: var(--color__primary);
+    }
+}

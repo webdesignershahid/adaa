@@ -1,0 +1,198 @@
+/*--------------------------------------------------------------
+    [ ## Hero Section Start ]
+--------------------------------------------------------------*/
+.hero__section {
+    margin-top: 15rem;
+}
+/*--------------------------------------------------------------
+    [ Hero Section End ]
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+    [ ## About Section Start ]
+--------------------------------------------------------------*/
+.about {
+    padding: 10rem 0;
+    overflow: hidden;
+    .section-content {
+        p {
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 1.5;
+            & + p {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+    .row {
+        --bs-gutter-x: 5rem
+    }
+    .section-image {
+        width: 120%;
+    }
+    .states_wrapper{
+        margin-top: 10rem;
+    }
+    .state-item {
+        border: .1rem solid var(--color__primary);
+        position: relative;
+        padding: 5rem 4rem;
+        text-align: center;
+
+        .icon {
+            max-height: 10rem;
+        }
+        .number {
+            font-weight: bold;
+            font-size: 6rem;
+            color: var(--color__primary);
+        }
+        p {
+            font-size: 1.8rem;
+            margin-top: 1rem;
+        }
+
+        &::before {
+            content: '';
+            background: var(--color__white) url(../images/site-icon.svg);
+            width: 5.7rem;
+            height: 5.7rem;
+            position: absolute;
+            top: -2.8rem;
+            right: 1.5rem;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &::after {
+            content: '';
+            background: var(--color__white) url(../images/site-icon.svg);
+            width: 5.7rem;
+            height: 5.7rem;
+            position: absolute;
+            bottom: -2.8rem;
+            left: 1.5rem;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            transform: scaleX(-1);
+        }
+    }
+}
+/*--------------------------------------------------------------
+    [ About Section End ]
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+    [ ## Event Countdown Start ]
+--------------------------------------------------------------*/
+.event_Count_Down {
+    padding: 5rem 0;
+    background: rgb(0,53,148);
+    background: linear-gradient(90deg, rgba(0,53,148,1) 0%, rgba(67,133,191,1) 85%, rgba(155,203,235,1) 100%);
+
+
+    .section-content {
+        text-align: center;
+        color: var(--color__white);
+    }
+    .title {
+        font-weight: bold;
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        filter: drop-shadow(0px 4px 12px rgba(#000, 0.3));
+        
+    }
+    .timer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        filter: drop-shadow(0px 4px 12px rgba(#000, 0.3));
+    }
+    .timer_item {
+        font-size: 5rem;
+    }
+}
+/*--------------------------------------------------------------
+    [ Event Countdown End ]
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+    [ ## Agenda Start ]
+--------------------------------------------------------------*/
+.agenda {
+    padding: 10rem 0;
+
+
+    
+}
+/*--------------------------------------------------------------
+    [ Agenda End ]
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+    [ ## Speakers Panel Start ]
+--------------------------------------------------------------*/
+.speakers_panel {
+    background-color: rgba(#003594, 0.05);
+    padding: 10rem 0;
+
+    .row {
+        --bs-gutter-x: 5rem;
+        justify-content: center;
+    }
+    .speakers-row {
+        & + .speakers-row {
+            margin-top: 5rem;
+        }
+    }
+    .speakers-item {
+        position: relative;
+        text-align: right;
+        cursor: pointer;
+        img {
+            max-width: 39rem;
+        }
+        .text {
+            position: absolute;
+            bottom: 2rem;
+            left: 0;
+            background-color: var(--color__secondary);
+            padding: 1rem 1rem;
+            text-align: center;
+            width: 80%;
+        }
+
+        h6, p {
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+    }
+    .load-more {
+        margin-top: 5rem;
+
+        a {
+            min-width: 20rem;
+        }
+    }
+}
+/*--------------------------------------------------------------
+    [ Speakers Panel End ]
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+    [ ## Speakers Panel Start ]
+--------------------------------------------------------------*/
+.partners {
+    padding: 15rem 0 12rem;
+
+    .swiper-wrapper {
+        transition-timing-function: linear;
+        align-items: center;
+
+        .swiper-slide {
+            text-align: center;
+        }
+    }
+}
