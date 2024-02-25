@@ -387,7 +387,7 @@
                     flex: 0 0 20rem;
                     color: var(--color__primary);
                     font-weight: bold;
-                    font-size: 1.8rem;
+                    font-size: 2rem;
                     display: flex;
                     align-items: center;
                     gap: 1rem;
@@ -396,6 +396,9 @@
                     flex: 1;
                     font-size: 1.8rem;
                     font-weight: 500;
+                    @include md-down {
+                        margin-top: .5rem;
+                    }
                     @include xxl-up {
                         font-size: 2rem;
                     }

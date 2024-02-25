@@ -1124,7 +1124,7 @@ header .menu-toggler {
   flex: 0 0 20rem;
   color: var(--color__primary);
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -1133,6 +1133,11 @@ header .menu-toggler {
   flex: 1;
   font-size: 1.8rem;
   font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  .agenda .agenda_tab_wrapper .tab-content .timeline .description {
+    margin-top: 0.5rem;
+  }
 }
 @media screen and (min-width: 1400px) {
   .agenda .agenda_tab_wrapper .tab-content .timeline .description {
