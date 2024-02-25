@@ -36,767 +36,111 @@
 
 <body>
 
-    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Start Site Header
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <!-- Site Logo -->
+    <div class="smooth-scroll" id="home">
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Start Site Header
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <header class="header" id="header">
+            <div class="container">
+                <nav class="nav">
+                    <!-- Site Logo -->
+                    <a href="index.html">
+                        <img 
+                            src="assets/images/logo.svg" 
+                            alt="Edaa"
+                            class="site-logo"
+                        >
+                    </a>
+                    <!-- Site Menu Start -->
+                    <div class="site-menu">
+                        <ul class="nav-menu">
+                            <li>
+                                <a href="#home"> 
+                                    HOME
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#about"> 
+                                    ABOUT THE EVENT
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#agenda"> 
+                                    AGENDA
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#sponsors"> 
+                                    BECOME A SPONSOR
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    CONTACT US
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="button-group">
+                            <li>
+                                <a href="#" class="btn_primary">
+                                    REGISTRATION
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="lang">
+                                    عربي
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- Mobile Menu Toggler -->
+                        <button class="menu-toggler">
+                            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 11.3333C0 11.1565 0.0862012 10.987 0.23964 10.8619C0.393079 10.7369 0.601186 10.6667 0.818182 10.6667H17.1818C17.3988 10.6667 17.6069 10.7369 17.7604 10.8619C17.9138 10.987 18 11.1565 18 11.3333C18 11.5101 17.9138 11.6797 17.7604 11.8047C17.6069 11.9298 17.3988 12 17.1818 12H0.818182C0.601186 12 0.393079 11.9298 0.23964 11.8047C0.0862012 11.6797 0 11.5101 0 11.3333ZM0 6C0 5.82319 0.0862012 5.65362 0.23964 5.5286C0.393079 5.40357 0.601186 5.33333 0.818182 5.33333H17.1818C17.3988 5.33333 17.6069 5.40357 17.7604 5.5286C17.9138 5.65362 18 5.82319 18 6C18 6.17681 17.9138 6.34638 17.7604 6.47141C17.6069 6.59643 17.3988 6.66667 17.1818 6.66667H0.818182C0.601186 6.66667 0.393079 6.59643 0.23964 6.47141C0.0862012 6.34638 0 6.17681 0 6ZM0 0.666667C0 0.489856 0.0862012 0.320287 0.23964 0.195262C0.393079 0.070238 0.601186 0 0.818182 0H17.1818C17.3988 0 17.6069 0.070238 17.7604 0.195262C17.9138 0.320287 18 0.489856 18 0.666667C18 0.843478 17.9138 1.01305 17.7604 1.13807C17.6069 1.2631 17.3988 1.33333 17.1818 1.33333H0.818182C0.601186 1.33333 0.393079 1.2631 0.23964 1.13807C0.0862012 1.01305 0 0.843478 0 0.666667Z" fill="black"/>
+                            </svg>
+                        </button>
+                        <!-- Mobile Menu Toggler End -->
+                    </div>
+                    <!-- Site Menu End -->
+                </nav>
+            </div>
+        </header>
+        <div class="menu-overlay"></div>
+        <div class="mobile-menu">
+            <div class="nav-header">
+                <!-- Site Menu -->
                 <a href="index.html">
                     <img 
-                        src="assets/images/logo.svg" 
+                        src="assets/images/logo-2.svg" 
                         alt="Edaa"
                         class="site-logo"
                     >
                 </a>
-                <!-- Site Menu Start -->
-                <div class="site-menu">
-                    <ul class="nav-menu">
-                        <li>
-                            <a href="#"> 
-                                HOME
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"> 
-                                ABOUT THE EVENT
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"> 
-                                AGENDA
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"> 
-                                BECOME A SPONSOR
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"> 
-                                CONTACT US
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="button-group">
-                        <li>
-                            <a href="#" class="btn_primary">
-                                REGISTRATION
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="lang">
-                                عربي
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- Mobile Menu Toggler -->
-                    <button class="menu-toggler">
-                        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 11.3333C0 11.1565 0.0862012 10.987 0.23964 10.8619C0.393079 10.7369 0.601186 10.6667 0.818182 10.6667H17.1818C17.3988 10.6667 17.6069 10.7369 17.7604 10.8619C17.9138 10.987 18 11.1565 18 11.3333C18 11.5101 17.9138 11.6797 17.7604 11.8047C17.6069 11.9298 17.3988 12 17.1818 12H0.818182C0.601186 12 0.393079 11.9298 0.23964 11.8047C0.0862012 11.6797 0 11.5101 0 11.3333ZM0 6C0 5.82319 0.0862012 5.65362 0.23964 5.5286C0.393079 5.40357 0.601186 5.33333 0.818182 5.33333H17.1818C17.3988 5.33333 17.6069 5.40357 17.7604 5.5286C17.9138 5.65362 18 5.82319 18 6C18 6.17681 17.9138 6.34638 17.7604 6.47141C17.6069 6.59643 17.3988 6.66667 17.1818 6.66667H0.818182C0.601186 6.66667 0.393079 6.59643 0.23964 6.47141C0.0862012 6.34638 0 6.17681 0 6ZM0 0.666667C0 0.489856 0.0862012 0.320287 0.23964 0.195262C0.393079 0.070238 0.601186 0 0.818182 0H17.1818C17.3988 0 17.6069 0.070238 17.7604 0.195262C17.9138 0.320287 18 0.489856 18 0.666667C18 0.843478 17.9138 1.01305 17.7604 1.13807C17.6069 1.2631 17.3988 1.33333 17.1818 1.33333H0.818182C0.601186 1.33333 0.393079 1.2631 0.23964 1.13807C0.0862012 1.01305 0 0.843478 0 0.666667Z" fill="black"/>
-                        </svg>
-                    </button>
-                    <!-- Mobile Menu Toggler End -->
-                </div>
-                <!-- Site Menu End -->
-            </nav>
-        </div>
-    </header>
-    <div class="menu-overlay"></div>
-    <div class="mobile-menu">
-        <div class="nav-header">
-            <!-- Site Menu -->
-            <a href="index.html">
-                <img 
-                    src="assets/images/logo-2.svg" 
-                    alt="Edaa"
-                    class="site-logo"
-                >
-            </a>
-            <!-- Close Menu Icon -->
-            <button class="close-menu">
-                &times;
-            </button>
-        </div>
-        <!-- Mobile Site Menu Icon -->
-        <div class="site-menu">
-            <h2 class="menu-title">MENU</h2>
-            <ul class="nav-menu">
-                <li>
-                    <a href="#"> 
-                        HOME
-                    </a>
-                </li>
-                <li>
-                    <a href="#"> 
-                        ABOUT THE EVENT
-                    </a>
-                </li>
-                <li>
-                    <a href="#"> 
-                        AGENDA
-                    </a>
-                </li>
-                <li>
-                    <a href="#"> 
-                        BECOME A SPONSOR
-                    </a>
-                </li>
-                <li>
-                    <a href="#"> 
-                        CONTACT US
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!-- Mobile Site Menu Icon End -->
-    </div>
-    <!--~~./ end site header ~~-->
-        
-
-    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Start Hero
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <div class="hero__section">
-        <div class="heroSlider swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="container">
-                        <div class="slide-content">
-                            <div class="subtitle">
-                                Location Name
-                            </div>
-                            <div class="title">
-                                Welcome Message To This Conference Name Goes Here
-                            </div>
-                            <p>
-                                Date of Event
-                            </p>
-                            <div class="button-group">
-                                <a href="#" class="btn_secondary">
-                                    REGISTER NOW
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide-image" style="background-image: url(assets/images/hero/slide1.png);"></div>
-                </div>
+                <!-- Close Menu Icon -->
+                <button class="close-menu">
+                    &times;
+                </button>
             </div>
-        </div>
-        <svg class="heroClip">
-            <clipPath id="heroClipPath" clipPathUnits="objectBoundingBox"><path d="M0.322,0.571 C0.36,0.52,0.359,0.436,0.319,0.388 L0.006,0.001 L1,0.108 V0.893 L0,1 L0.322,0.571"></path></clipPath>
-        </svg>
-    </div>
-    <!--~~./ Hero End ~~-->
-    
-
-    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Start About
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <div class="about">
-        <div class="container">
-            <div class="row align-items-end">
-                <div class="col-lg-6">
-                    <div class="section-title">
-                        <div class="subtitle">
-                            QATAR 2024
-                        </div>
-                        <div class="title">
-                            NAME OF ANNUAL CONFERENCE
-                        </div>
-                    </div>
-                    <div class="section-content">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non tellus orci ac auctor augue. Turpis nunc eget lorem dolor sed. Vitae nunc sed velit dignissim sodales. Vitae tortor condimentum lacinia quis vel eros donec. Est velit egestas dui id ornare. Mauris vitae ultricies leo integer. Massa enim nec dui nunc mattis enim. Sit amet purus gravida quis blandit turpis cursus in. Neque egestas congue quisque egestas diam in arcu cursus euismod. Nisl rhoncus mattis rhoncus urna neque viverra.
-                        </p>
-                        <p>
-                            Malesuada proin libero nunc consequat interdum varius sit amet. Molestie at elementum eu facilisis. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id leo in vitae turpis massa. Id volutpat lacus laoreet non curabitur gravida arcu. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Est lorem ipsum dolor sit amet consectetur adipiscing. Eleifend quam adipiscing vitae proin sagittis nisl. Interdum varius sit amet mattis vulputate enim nulla aliquet porttitor. Turpis egestas integer eget aliquet. Lacus vel facilisis volutpat est velit egestas dui id ornare. Velit dignissim sodales ut eu sem integer. Massa enim nec dui nunc mattis enim ut tellus. Turpis massa tincidunt dui ut ornare lectus sit amet.
-                        </p>
-                        <p>
-                            Aliquam vestibulum morbi blandit cursus risus at ultrices. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Vel pharetra vel turpis nunc eget lorem dolor sed viverra. Dui ut ornare lectus sit amet est placerat in egestas. Vitae turpis massa sed elementum tempus egestas sed sed risus. Quis auctor elit sed vulputate mi sit amet mauris commodo. Molestie nunc non blandit massa. Id diam vel quam elementum. Vel facilisis volutpat est velit egestas dui id. Velit scelerisque in dictum non consectetur a erat nam at. Bibendum at varius vel pharetra vel. Id semper risus in hendrerit gravida rutrum quisque non tellus. Sodales ut etiam sit amet nisl purus. Nunc consequat interdum varius sit amet. Iaculis urna id volutpat lacus laoreet non. Augue eget arcu dictum varius duis at consectetur lorem donec.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="section-image">
-                        <img 
-                            src="assets/images/about-image.png" 
-                            alt="About Us" 
-                        />
-                    </div>
-                </div>
-            </div>
-
-            <div class="states_wrapper">
-                <div class="row">
-                    <div class="col-6 col-lg-3">
-                        <div class="state-item">
-                            <div class="icon">
-                                <img 
-                                    src="assets/images/states/1.svg" 
-                                    alt="KEYNOTE SPEAKERS" 
-                                />
-                            </div>
-                            <div class="number">
-                                00+
-                            </div>
-                            <p>
-                                KEYNOTE SPEAKERS
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="state-item">
-                            <div class="icon">
-                                <img 
-                                    src="assets/images/states/2.svg" 
-                                    alt="KEYNOTE SPEAKERS" 
-                                />
-                            </div>
-                            <div class="number">
-                                00+
-                            </div>
-                            <p>
-                                KEYNOTE SPEAKERS
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="state-item">
-                            <div class="icon">
-                                <img 
-                                    src="assets/images/states/3.svg" 
-                                    alt="KEYNOTE SPEAKERS" 
-                                />
-                            </div>
-                            <div class="number">
-                                00+
-                            </div>
-                            <p>
-                                DELEGATES
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="state-item">
-                            <div class="icon">
-                                <img 
-                                    src="assets/images/states/4.svg" 
-                                    alt="KEYNOTE SPEAKERS" 
-                                />
-                            </div>
-                            <div class="number">
-                                00+
-                            </div>
-                            <p>
-                                NETWORKING HOURS
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--~~./ end About ~~-->
-   
-
-    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Start Countdown
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <div class="event_Count_Down">
-        <div class="container">
-            <div class="section-content">
-                <div class="title">Event Name Launching in</div>
-                <div class="timer" id="event_countdown">
-                    <div class="timer_item days"></div>
-                    <div class="timer_item hours"></div>
-                    <div class="timer_item minutes"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--~~./ end Countdown ~~-->
-   
-    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Start Agenda
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <div class="agenda">
-        <div class="container">
-            <div class="section-title">
-                <div class="subtitle">
-                    BROWSE A DETAILED
-                </div>
-                <div class="title">
-                    AGENDA
-                </div>
-            </div>
-
-            <div class="agenda_tab_wrapper">
-                <div class="nav nav-pills" role="tablist" aria-orientation="vertical">
-                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#agenda_day_1" type="button" role="tab">
-                        <h5>DAY 1</h5>
-                        <p>29 April, 2024</p>
-                    </button>
-                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#agenda_day_2" type="button" role="tab">
-                        <h5>DAY 2</h5>
-                        <p>30 April, 2024</p>
-                    </button>
-                </div>
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="agenda_day_1" role="tabpanel">
-                        <!-- Timeline item  -->
-                        <div class="timeline">
-                            <div class="time">
-                                <i class="far fa-clock"></i>
-                                <span>
-                                    9:00 - 10:00
-                                </span>
-                            </div>
-                            <div class="description text-theme">
-                                Opening Ceremony
-                            </div>
-                        </div>
-                        <!-- Timeline Item -->
-                        <div class="timeline">
-                            <div class="time">
-                                <i class="far fa-clock"></i>
-                                <span>
-                                    9:00 - 10:00
-                                </span>
-                            </div>
-                            <div class="description">
-                                <span class="text-theme">Panel 1:</span> Title Goes Here
-                            </div>
-                        </div>
-                        <!-- Timeline Item -->
-                        <div class="timeline">
-                            <div class="time">
-                                <i class="far fa-clock"></i>
-                                <span>
-                                    9:00 - 10:00
-                                </span>
-                            </div>
-                            <div class="description">
-                                <span class="text-theme">Panel 1:</span> Title Goes Here
-                            </div>
-                        </div>
-                        <!-- Timeline Item -->
-                        <div class="timeline">
-                            <div class="time">
-                                <i class="far fa-clock"></i>
-                                <span>
-                                    9:00 - 10:00
-                                </span>
-                            </div>
-                            <div class="description">
-                                <span class="text-theme">Panel 1:</span> Title Goes Here
-                            </div>
-                        </div>
-                        <!-- Timeline Item -->
-                        <div class="timeline">
-                            <div class="time">
-                                <i class="far fa-clock"></i>
-                                <span>
-                                    9:00 - 10:00
-                                </span>
-                            </div>
-                            <div class="description">
-                                <span class="text-theme">Panel 1:</span> Title Goes Here
-                            </div>
-                        </div>
-                        <!-- Timeline Item -->
-                        <div class="timeline">
-                            <div class="time">
-                                <i class="far fa-clock"></i>
-                                <span>
-                                    9:00 - 10:00
-                                </span>
-                            </div>
-                            <div class="description">
-                                <span class="text-theme">Panel 1:</span> Title Goes Here
-                            </div>
-                        </div>
-                        <!-- Timeline Item -->
-                        <div class="timeline">
-                            <div class="time">
-                                <i class="far fa-clock"></i>
-                                <span>
-                                    9:00 - 10:00
-                                </span>
-                            </div>
-                            <div class="description">
-                                <span class="text-theme">Panel 1:</span> Title Goes Here
-                            </div>
-                        </div>
-                        <!-- Timeline Item -->
-                        <div class="timeline">
-                            <div class="time">
-                                <i class="far fa-clock"></i>
-                                <span>
-                                    9:00 - 10:00
-                                </span>
-                            </div>
-                            <div class="description">
-                                <span class="text-theme">Panel 1:</span> Title Goes Here
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="agenda_day_2" role="tabpanel">
-                        <!-- Timeline item  -->
-                        <div class="timeline">
-                            <div class="time">
-                                <i class="far fa-clock"></i>
-                                <span>
-                                    9:00 - 10:00
-                                </span>
-                            </div>
-                            <div class="description text-theme">
-                                Opening Ceremony
-                            </div>
-                        </div>
-                        <!-- Timeline Item -->
-                        <div class="timeline">
-                            <div class="time">
-                                <i class="far fa-clock"></i>
-                                <span>
-                                    9:00 - 10:00
-                                </span>
-                            </div>
-                            <div class="description">
-                                <span class="text-theme">Panel 1:</span> Title Goes Here
-                            </div>
-                        </div>
-                        <!-- Timeline Item -->
-                        <div class="timeline">
-                            <div class="time">
-                                <i class="far fa-clock"></i>
-                                <span>
-                                    9:00 - 10:00
-                                </span>
-                            </div>
-                            <div class="description">
-                                <span class="text-theme">Panel 1:</span> Title Goes Here
-                            </div>
-                        </div>
-                        <!-- Timeline Item -->
-                        <div class="timeline">
-                            <div class="time">
-                                <i class="far fa-clock"></i>
-                                <span>
-                                    9:00 - 10:00
-                                </span>
-                            </div>
-                            <div class="description">
-                                <span class="text-theme">Panel 1:</span> Title Goes Here
-                            </div>
-                        </div>
-                        <!-- Timeline Item -->
-                        <div class="timeline">
-                            <div class="time">
-                                <i class="far fa-clock"></i>
-                                <span>
-                                    9:00 - 10:00
-                                </span>
-                            </div>
-                            <div class="description">
-                                <span class="text-theme">Panel 1:</span> Title Goes Here
-                            </div>
-                        </div>
-                        <!-- Timeline Item -->
-                        <div class="timeline">
-                            <div class="time">
-                                <i class="far fa-clock"></i>
-                                <span>
-                                    9:00 - 10:00
-                                </span>
-                            </div>
-                            <div class="description">
-                                <span class="text-theme">Panel 1:</span> Title Goes Here
-                            </div>
-                        </div>
-                        <!-- Timeline Item -->
-                        <div class="timeline">
-                            <div class="time">
-                                <i class="far fa-clock"></i>
-                                <span>
-                                    9:00 - 10:00
-                                </span>
-                            </div>
-                            <div class="description">
-                                <span class="text-theme">Panel 1:</span> Title Goes Here
-                            </div>
-                        </div>
-                        <!-- Timeline Item -->
-                        <div class="timeline">
-                            <div class="time">
-                                <i class="far fa-clock"></i>
-                                <span>
-                                    9:00 - 10:00
-                                </span>
-                            </div>
-                            <div class="description">
-                                <span class="text-theme">Panel 1:</span> Title Goes Here
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="download-button text-center">
-                <img 
-                    src="assets/images/site-icon.svg" 
-                    alt="Edda"
-                    class="flip-x"
-                />
-                <a href="brochure.pdf" target="_blank" class="btn_secondary">
-                    DOWNLOAD BROCHURE
-                </a>
-                <img 
-                    src="assets/images/site-icon.svg" 
-                    alt="Edda"
-                />
-            </div>
-        </div>
-    </div>
-    <!--~~./ end Agenda ~~-->
-    
-
-    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Start Meet the speakers
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <div class="speakers_panel">
-        <div class="container">
-            <div class="section-title">
-                <div class="subtitle">
-                    MEET THE SPEAKERS
-                </div>
-                <div class="title">
-                    DISTINGUISHED PANEL
-                </div>
-            </div>
-
-            <div class="speakers-row row">
-                <div class="col-6 col-md-4 col-xl-3">
-                    <div class="speakers-item" 
-                        data-bs-toggle="modal" 
-                        data-bs-target="#speakers_dtls">
-                        <img 
-                            src="assets/images/speakers/1.png" 
-                            alt="Name of Speaker"
-                        />
-                        <div class="text">
-                            <h6>
-                                Name of Speaker
-                            </h6>
-                            <p>
-                                Title
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-xl-3">
-                    <div class="speakers-item" 
-                        data-bs-toggle="modal" 
-                        data-bs-target="#speakers_dtls">
-                        <img 
-                            src="assets/images/speakers/2.png" 
-                            alt="Name of Speaker"
-                        />
-                        <div class="text">
-                            <h6>
-                                Name of Speaker
-                            </h6>
-                            <p>
-                                Title
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-xl-3">
-                    <div class="speakers-item" 
-                        data-bs-toggle="modal" 
-                        data-bs-target="#speakers_dtls">
-                        <img 
-                            src="assets/images/speakers/3.png" 
-                            alt="Name of Speaker"
-                        />
-                        <div class="text">
-                            <h6>
-                                Name of Speaker
-                            </h6>
-                            <p>
-                                Title
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="speakers-row row">
-                <div class="col-6 col-md-4 col-xl-3">
-                    <div class="speakers-item" 
-                        data-bs-toggle="modal" 
-                        data-bs-target="#speakers_dtls">
-                        <img 
-                            src="assets/images/speakers/4.png" 
-                            alt="Name of Speaker"
-                        />
-                        <div class="text">
-                            <h6>
-                                Name of Speaker
-                            </h6>
-                            <p>
-                                Title
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-xl-3">
-                    <div class="speakers-item" 
-                        data-bs-toggle="modal" 
-                        data-bs-target="#speakers_dtls">
-                        <img 
-                            src="assets/images/speakers/5.png" 
-                            alt="Name of Speaker"
-                        />
-                        <div class="text">
-                            <h6>
-                                Name of Speaker
-                            </h6>
-                            <p>
-                                Title
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-xl-3">
-                    <div class="speakers-item" 
-                        data-bs-toggle="modal" 
-                        data-bs-target="#speakers_dtls">
-                        <img 
-                            src="assets/images/speakers/1.png" 
-                            alt="Name of Speaker"
-                        />
-                        <div class="text">
-                            <h6>
-                                Name of Speaker
-                            </h6>
-                            <p>
-                                Title
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="load-more text-center">
-                <a href="#" class="btn_primary">
-                    LOAD MORE
-                </a>
-            </div>
-        </div>
-    </div>
-    <!--~~./ end Meet the speakers ~~-->
-    
-
-    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Start Partner & Sponsors
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <div class="partners">
-        <div class="container">
-            <div class="section-title">
-                <div class="title">
-                    PARTNERS & SPONSORS
-                </div>
-            </div>
-            <div class="swiper" id="partnerSlider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <img 
-                                src="assets/images/logo.svg" 
-                                alt="Partner Name" 
-                            />
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <img 
-                                src="assets/images/logo-2.svg" 
-                                alt="Partner Name" 
-                            />
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <img 
-                                src="assets/images/logo.svg" 
-                                alt="Partner Name" 
-                            />
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <img 
-                                src="assets/images/logo-2.svg" 
-                                alt="Partner Name" 
-                            />
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <img 
-                                src="assets/images/logo.svg" 
-                                alt="Partner Name" 
-                            />
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <img 
-                                src="assets/images/logo-2.svg" 
-                                alt="Partner Name" 
-                            />
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <img 
-                                src="assets/images/logo.svg" 
-                                alt="Partner Name" 
-                            />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--~~./ ent Partner & Sponsors ~~-->
-    
-
-    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Start Footer
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <footer>
-        <div class="container">
-            <div class="footer-top">
-                <ul class="footer-menu">
+            <!-- Mobile Site Menu Icon -->
+            <div class="site-menu">
+                <h2 class="menu-title">MENU</h2>
+                <ul class="nav-menu">
                     <li>
-                        <a href="#"> 
+                        <a href="#home"> 
                             HOME
                         </a>
                     </li>
                     <li>
-                        <a href="#"> 
+                        <a href="#about"> 
                             ABOUT THE EVENT
                         </a>
                     </li>
                     <li>
-                        <a href="#"> 
+                        <a href="#agenda"> 
                             AGENDA
                         </a>
                     </li>
                     <li>
-                        <a href="#"> 
+                        <a href="#sponsors"> 
                             BECOME A SPONSOR
                         </a>
                     </li>
@@ -805,21 +149,708 @@
                             CONTACT US
                         </a>
                     </li>
-                    <li>
-                        <a href="#" class="btn_primary_alt">
-                            REGISTER NOW
-                        </a>
-                    </li>
                 </ul>
             </div>
-            <div class="footer-bottom">
-                <p>
-                    Copyright &copy; 2023 EDAA. All Rights Reserved.
-                </p>
-            </div>
+            <!-- Mobile Site Menu Icon End -->
         </div>
-    </footer>
-    <!--~~./ end Footer ~~-->   
+        <!--~~./ end site header ~~-->
+        <main data-scroll-section>
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Hero
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    
+            <div class="hero__section" data-scroll data-scroll="2">
+                <div class="heroSlider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="slide-content">
+                                    <div class="subtitle">
+                                        The Ritz carlton Hotel
+                                    </div>
+                                    <div class="title">
+                                        Exclusive Rates for the Conference Attendees
+                                    </div>
+                                    <p>
+                                        29-30 April, 2024
+                                    </p>
+                                    <div class="button-group">
+                                        <a href="#" class="btn_secondary">
+                                            REGISTER NOW
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container container-md-fluid">
+                                <div class="slide-image" style="background-image: url(assets/images/hero/slide1.png);"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="slide-content">
+                                    <div class="subtitle">
+                                        The Annueal Conference
+                                    </div>
+                                    <div class="title">
+                                        Welcome to the Edda Annueal Conference
+                                    </div>
+                                    <p>
+                                        April 29, 2024
+                                    </p>
+                                    <div class="button-group">
+                                        <a href="#" class="btn_secondary">
+                                            REGISTER NOW
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container container-md-fluid">
+                                <div class="slide-image" style="background-image: url(assets/images/hero/slide2.jpg);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <svg class="heroClip">
+                    <clipPath id="heroClipPath" clipPathUnits="objectBoundingBox">
+                        <path d="M0.32,0.573 C0.358,0.522,0.357,0.438,0.317,0.39 L0,0 L1,0.054 V0.946 L0,1 L0.32,0.573"></path>
+                    </clipPath>
+                </svg>
+            </div>
+            <!--~~./ Hero End ~~-->
+            
+    
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start About
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <div class="about" id="about">
+                <div class="container">
+                    <div class="row align-items-end">
+                        <div class="col-lg-6">
+                            <div class="section-title">
+                                <div class="subtitle">
+                                    QATAR 2024
+                                </div>
+                                <div class="title">
+                                    NAME OF ANNUAL CONFERENCE
+                                </div>
+                            </div>
+                            <div class="section-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non tellus orci ac auctor augue. Turpis nunc eget lorem dolor sed. Vitae nunc sed velit dignissim sodales. Vitae tortor condimentum lacinia quis vel eros donec. Est velit egestas dui id ornare. Mauris vitae ultricies leo integer. Massa enim nec dui nunc mattis enim. Sit amet purus gravida quis blandit turpis cursus in. Neque egestas congue quisque egestas diam in arcu cursus euismod. Nisl rhoncus mattis rhoncus urna neque viverra.
+                                </p>
+                                <p>
+                                    Malesuada proin libero nunc consequat interdum varius sit amet. Molestie at elementum eu facilisis. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id leo in vitae turpis massa. Id volutpat lacus laoreet non curabitur gravida arcu. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Est lorem ipsum dolor sit amet consectetur adipiscing. Eleifend quam adipiscing vitae proin sagittis nisl. Interdum varius sit amet mattis vulputate enim nulla aliquet porttitor. Turpis egestas integer eget aliquet. Lacus vel facilisis volutpat est velit egestas dui id ornare. Velit dignissim sodales ut eu sem integer. Massa enim nec dui nunc mattis enim ut tellus. Turpis massa tincidunt dui ut ornare lectus sit amet.
+                                </p>
+                                <p>
+                                    Aliquam vestibulum morbi blandit cursus risus at ultrices. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Vel pharetra vel turpis nunc eget lorem dolor sed viverra. Dui ut ornare lectus sit amet est placerat in egestas. Vitae turpis massa sed elementum tempus egestas sed sed risus. Quis auctor elit sed vulputate mi sit amet mauris commodo. Molestie nunc non blandit massa. Id diam vel quam elementum. Vel facilisis volutpat est velit egestas dui id. Velit scelerisque in dictum non consectetur a erat nam at. Bibendum at varius vel pharetra vel. Id semper risus in hendrerit gravida rutrum quisque non tellus. Sodales ut etiam sit amet nisl purus. Nunc consequat interdum varius sit amet. Iaculis urna id volutpat lacus laoreet non. Augue eget arcu dictum varius duis at consectetur lorem donec.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="section-image">
+                                <img 
+                                    src="assets/images/about-image.png" 
+                                    alt="About Us" 
+                                />
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="states_wrapper">
+                        <div class="row">
+                            <div class="col-6 col-lg-3">
+                                <div class="state-item">
+                                    <div class="icon">
+                                        <img 
+                                            src="assets/images/states/1.svg" 
+                                            alt="KEYNOTE SPEAKERS" 
+                                        />
+                                    </div>
+                                    <div class="number">
+                                        00+
+                                    </div>
+                                    <p>
+                                        KEYNOTE SPEAKERS
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div class="state-item">
+                                    <div class="icon">
+                                        <img 
+                                            src="assets/images/states/2.svg" 
+                                            alt="KEYNOTE SPEAKERS" 
+                                        />
+                                    </div>
+                                    <div class="number">
+                                        00+
+                                    </div>
+                                    <p>
+                                        KEYNOTE SPEAKERS
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div class="state-item">
+                                    <div class="icon">
+                                        <img 
+                                            src="assets/images/states/3.svg" 
+                                            alt="KEYNOTE SPEAKERS" 
+                                        />
+                                    </div>
+                                    <div class="number">
+                                        00+
+                                    </div>
+                                    <p>
+                                        DELEGATES
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div class="state-item">
+                                    <div class="icon">
+                                        <img 
+                                            src="assets/images/states/4.svg" 
+                                            alt="KEYNOTE SPEAKERS" 
+                                        />
+                                    </div>
+                                    <div class="number">
+                                        00+
+                                    </div>
+                                    <p>
+                                        NETWORKING HOURS
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--~~./ end About ~~-->
+        
+    
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Countdown
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <div class="event_Count_Down">
+                <div class="container">
+                    <div class="section-content">
+                        <div class="title">Event Name Launching in</div>
+                        <div class="timer" id="event_countdown">
+                            <div class="timer_item days"></div>
+                            <div class="timer_item hours"></div>
+                            <div class="timer_item minutes"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--~~./ end Countdown ~~-->
+        
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Agenda
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <div class="agenda" id="agenda">
+                <div class="container">
+                    <div class="section-title">
+                        <div class="subtitle">
+                            BROWSE A DETAILED
+                        </div>
+                        <div class="title">
+                            AGENDA
+                        </div>
+                    </div>
+    
+                    <div class="agenda_tab_wrapper">
+                        <div class="nav nav-pills" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#agenda_day_1" type="button" role="tab">
+                                <h5>DAY 1</h5>
+                                <p>29 April, 2024</p>
+                            </button>
+                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#agenda_day_2" type="button" role="tab">
+                                <h5>DAY 2</h5>
+                                <p>30 April, 2024</p>
+                            </button>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="agenda_day_1" role="tabpanel">
+                                <!-- Timeline item  -->
+                                <div class="timeline">
+                                    <div class="time">
+                                        <i class="far fa-clock"></i>
+                                        <span>
+                                            9:00 - 10:00
+                                        </span>
+                                    </div>
+                                    <div class="description text-theme">
+                                        Opening Ceremony
+                                    </div>
+                                </div>
+                                <!-- Timeline Item -->
+                                <div class="timeline">
+                                    <div class="time">
+                                        <i class="far fa-clock"></i>
+                                        <span>
+                                            9:00 - 10:00
+                                        </span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="text-theme">Panel 1:</span> Title Goes Here
+                                    </div>
+                                </div>
+                                <!-- Timeline Item -->
+                                <div class="timeline">
+                                    <div class="time">
+                                        <i class="far fa-clock"></i>
+                                        <span>
+                                            9:00 - 10:00
+                                        </span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="text-theme">Panel 1:</span> Title Goes Here
+                                    </div>
+                                </div>
+                                <!-- Timeline Item -->
+                                <div class="timeline">
+                                    <div class="time">
+                                        <i class="far fa-clock"></i>
+                                        <span>
+                                            9:00 - 10:00
+                                        </span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="text-theme">Panel 1:</span> Title Goes Here
+                                    </div>
+                                </div>
+                                <!-- Timeline Item -->
+                                <div class="timeline">
+                                    <div class="time">
+                                        <i class="far fa-clock"></i>
+                                        <span>
+                                            9:00 - 10:00
+                                        </span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="text-theme">Panel 1:</span> Title Goes Here
+                                    </div>
+                                </div>
+                                <!-- Timeline Item -->
+                                <div class="timeline">
+                                    <div class="time">
+                                        <i class="far fa-clock"></i>
+                                        <span>
+                                            9:00 - 10:00
+                                        </span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="text-theme">Panel 1:</span> Title Goes Here
+                                    </div>
+                                </div>
+                                <!-- Timeline Item -->
+                                <div class="timeline">
+                                    <div class="time">
+                                        <i class="far fa-clock"></i>
+                                        <span>
+                                            9:00 - 10:00
+                                        </span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="text-theme">Panel 1:</span> Title Goes Here
+                                    </div>
+                                </div>
+                                <!-- Timeline Item -->
+                                <div class="timeline">
+                                    <div class="time">
+                                        <i class="far fa-clock"></i>
+                                        <span>
+                                            9:00 - 10:00
+                                        </span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="text-theme">Panel 1:</span> Title Goes Here
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="agenda_day_2" role="tabpanel">
+                                <!-- Timeline item  -->
+                                <div class="timeline">
+                                    <div class="time">
+                                        <i class="far fa-clock"></i>
+                                        <span>
+                                            9:00 - 10:00
+                                        </span>
+                                    </div>
+                                    <div class="description text-theme">
+                                        Opening Ceremony
+                                    </div>
+                                </div>
+                                <!-- Timeline Item -->
+                                <div class="timeline">
+                                    <div class="time">
+                                        <i class="far fa-clock"></i>
+                                        <span>
+                                            9:00 - 10:00
+                                        </span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="text-theme">Panel 1:</span> Title Goes Here
+                                    </div>
+                                </div>
+                                <!-- Timeline Item -->
+                                <div class="timeline">
+                                    <div class="time">
+                                        <i class="far fa-clock"></i>
+                                        <span>
+                                            9:00 - 10:00
+                                        </span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="text-theme">Panel 1:</span> Title Goes Here
+                                    </div>
+                                </div>
+                                <!-- Timeline Item -->
+                                <div class="timeline">
+                                    <div class="time">
+                                        <i class="far fa-clock"></i>
+                                        <span>
+                                            9:00 - 10:00
+                                        </span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="text-theme">Panel 1:</span> Title Goes Here
+                                    </div>
+                                </div>
+                                <!-- Timeline Item -->
+                                <div class="timeline">
+                                    <div class="time">
+                                        <i class="far fa-clock"></i>
+                                        <span>
+                                            9:00 - 10:00
+                                        </span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="text-theme">Panel 1:</span> Title Goes Here
+                                    </div>
+                                </div>
+                                <!-- Timeline Item -->
+                                <div class="timeline">
+                                    <div class="time">
+                                        <i class="far fa-clock"></i>
+                                        <span>
+                                            9:00 - 10:00
+                                        </span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="text-theme">Panel 1:</span> Title Goes Here
+                                    </div>
+                                </div>
+                                <!-- Timeline Item -->
+                                <div class="timeline">
+                                    <div class="time">
+                                        <i class="far fa-clock"></i>
+                                        <span>
+                                            9:00 - 10:00
+                                        </span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="text-theme">Panel 1:</span> Title Goes Here
+                                    </div>
+                                </div>
+                                <!-- Timeline Item -->
+                                <div class="timeline">
+                                    <div class="time">
+                                        <i class="far fa-clock"></i>
+                                        <span>
+                                            9:00 - 10:00
+                                        </span>
+                                    </div>
+                                    <div class="description">
+                                        <span class="text-theme">Panel 1:</span> Title Goes Here
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="download-button text-center">
+                        <img 
+                            src="assets/images/site-icon.svg" 
+                            alt="Edda"
+                            class="flip-x"
+                        />
+                        <a href="brochure.pdf" target="_blank" class="btn_secondary">
+                            DOWNLOAD BROCHURE
+                        </a>
+                        <img 
+                            src="assets/images/site-icon.svg" 
+                            alt="Edda"
+                        />
+                    </div>
+                </div>
+            </div>
+            <!--~~./ end Agenda ~~-->
+            
+    
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Meet the speakers
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <div class="speakers_panel">
+                <div class="container">
+                    <div class="section-title">
+                        <div class="subtitle">
+                            MEET THE SPEAKERS
+                        </div>
+                        <div class="title">
+                            DISTINGUISHED PANEL
+                        </div>
+                    </div>
+    
+                    <div class="speakers-row row"  data-scroll data-scroll="0.5">
+                        <div class="col-6 col-md-4 col-xl-3">
+                            <div class="speakers-item" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#speakers_dtls">
+                                <img 
+                                    src="assets/images/speakers/1.png" 
+                                    alt="Name of Speaker"
+                                />
+                                <div class="text">
+                                    <h6>
+                                        Name of Speaker
+                                    </h6>
+                                    <p>
+                                        Title
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-3">
+                            <div class="speakers-item" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#speakers_dtls">
+                                <img 
+                                    src="assets/images/speakers/2.png" 
+                                    alt="Name of Speaker"
+                                />
+                                <div class="text">
+                                    <h6>
+                                        Name of Speaker
+                                    </h6>
+                                    <p>
+                                        Title
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-3">
+                            <div class="speakers-item" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#speakers_dtls">
+                                <img 
+                                    src="assets/images/speakers/3.png" 
+                                    alt="Name of Speaker"
+                                />
+                                <div class="text">
+                                    <h6>
+                                        Name of Speaker
+                                    </h6>
+                                    <p>
+                                        Title
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speakers-row row">
+                        <div class="col-6 col-md-4 col-xl-3">
+                            <div class="speakers-item" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#speakers_dtls">
+                                <img 
+                                    src="assets/images/speakers/4.png" 
+                                    alt="Name of Speaker"
+                                />
+                                <div class="text">
+                                    <h6>
+                                        Name of Speaker
+                                    </h6>
+                                    <p>
+                                        Title
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-3">
+                            <div class="speakers-item" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#speakers_dtls">
+                                <img 
+                                    src="assets/images/speakers/5.png" 
+                                    alt="Name of Speaker"
+                                />
+                                <div class="text">
+                                    <h6>
+                                        Name of Speaker
+                                    </h6>
+                                    <p>
+                                        Title
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-3">
+                            <div class="speakers-item" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#speakers_dtls">
+                                <img 
+                                    src="assets/images/speakers/1.png" 
+                                    alt="Name of Speaker"
+                                />
+                                <div class="text">
+                                    <h6>
+                                        Name of Speaker
+                                    </h6>
+                                    <p>
+                                        Title
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="load-more text-center">
+                        <a href="#" class="btn_primary">
+                            LOAD MORE
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--~~./ end Meet the speakers ~~-->
+            
+    
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Partner & Sponsors
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <div class="partners" id="sponsors">
+                <div class="container">
+                    <div class="section-title">
+                        <div class="title">
+                            PARTNERS & SPONSORS
+                        </div>
+                    </div>
+                    <div class="swiper" id="partnerSlider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img 
+                                        src="assets/images/logo.svg" 
+                                        alt="Partner Name" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img 
+                                        src="assets/images/logo-2.svg" 
+                                        alt="Partner Name" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img 
+                                        src="assets/images/logo.svg" 
+                                        alt="Partner Name" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img 
+                                        src="assets/images/logo-2.svg" 
+                                        alt="Partner Name" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img 
+                                        src="assets/images/logo.svg" 
+                                        alt="Partner Name" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img 
+                                        src="assets/images/logo-2.svg" 
+                                        alt="Partner Name" 
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img 
+                                        src="assets/images/logo.svg" 
+                                        alt="Partner Name" 
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--~~./ ent Partner & Sponsors ~~-->
+            
+    
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Start Footer
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <footer>
+                <div class="container">
+                    <div class="footer-top">
+                        <ul class="footer-menu">
+                            <li>
+                                <a href="#home"> 
+                                    HOME
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#about"> 
+                                    ABOUT THE EVENT
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#agenda"> 
+                                    AGENDA
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#sponsors"> 
+                                    BECOME A SPONSOR
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> 
+                                    CONTACT US
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn_primary_alt">
+                                    REGISTER NOW
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>
+                            Copyright &copy; 2023 EDAA. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </footer>
+            <!--~~./ end Footer ~~-->   
+    
+        </main>
+    </div>
 
 
     <div class="modal fade" id="speakers_dtls" tabindex="-1">
@@ -842,6 +873,13 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/locomotive-scroll.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <script>
+
+    </script>
 </body>
 </html>

@@ -2,14 +2,24 @@
     [ ## Header ]
 --------------------------------------------------------------*/
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    position: relative;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
     z-index: 1024;
     padding: 1.5rem 0;
     transition: all .25s ease;
     background-color: var(--color__white);
+    transition-delay: 0.9s;
+    &.unpinned {
+        transition-delay: 0s;
+        opacity: 0;
+    }
+    &.pinned {
+        opacity: 1;
+        transition-delay: 0s;
+        box-shadow: 0 .5rem 1rem 0 rgba(#000,.15);
+    }
     .nav-menu {
         display: flex;
     }
@@ -92,13 +102,8 @@ header {
         @include lg-up {
             display: none;
         }
-    }
-    &.sticky {
-        box-shadow: 0 .5rem 1rem 0 rgba(#000,.15);
-    }
-   
+    }   
 }
-
 .mobile-menu {
     position: fixed;
     top: 0;

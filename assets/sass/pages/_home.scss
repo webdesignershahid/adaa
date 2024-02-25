@@ -2,29 +2,58 @@
     [ ## Hero Section Start ]
 --------------------------------------------------------------*/
 .hero__section {
-    margin-top: 12rem;
-
+    .swiper-wrapper {
+        transition-timing-function: linear;
+    }
     .swiper-slide {
         position: relative;
         .slide-content {
-            max-width: 55rem;
-            padding: 10rem 0;
+            max-width: 50rem;
+            padding: 5rem 0 3rem;
+            @include md-up {
+                padding: 8rem 0;
+            }
+            @include xl-up {
+                padding: 10rem 0;
+                max-width: 55rem;
+            }
+            @include xxl-up {
+                padding: 13rem 0;
+            }
             .subtitle {
                 color: var(--color__secondary);
-                font-size: 2.8rem;
+                font-size: 2rem;
                 font-weight: 500;
+                @include xl-up {
+                    font-size: 2.2rem;
+                }
+                @include xxl-up {
+                    font-size: 2.8rem;
+                }
             }
             .title {
-                font-size: 6rem;
+                font-size: 4rem;
                 font-weight: bold;
                 color: var(--color__primary);
                 line-height: 1.2;
                 margin: 2rem 0 .5rem;
+                @include lg-up {
+                    font-size: 5rem;
+                }
+                @include xl-up {
+                    font-size: 6rem;
+                }
             }
             p {
-                font-size: 2.4rem;
+                font-size: 1.8rem;
                 color: var(--color__secondary);
                 font-weight: 500;
+                @include xxl-up {
+                    font-size: 2.4rem;
+                }
+                @include xl-up {
+                    font-size: 2rem;
+                }
             }
 
             .button-group {
@@ -36,18 +65,40 @@
             }
         }
         .slide-image {
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: -1;
-            width: 90rem;
-            height: 100%;
+            height: 30rem;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            -webkit-clip-path: url(#heroClipPath);
-            clip-path: url(#heroClipPath);
+            
+            @include sm-up {
+                height: 40rem;
+            }
+            @include md-up {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: -1;
+                width: 100%;
+                max-width: 50rem;
+                height: 100%;
+                -webkit-clip-path: url(#heroClipPath);
+                clip-path: url(#heroClipPath);
+            }
+            @include lg-up {
+                max-width: 60rem;
+            }
+            @include xl-up {
+                max-width: 70rem;
+            }
+            @include xxl-up {
+                max-width: 100rem;
+            }
         }
+    }
+    .heroClip {
+        position: absolute;
+        width: 0;
+        height: 0;
     }
 }
 /*--------------------------------------------------------------
@@ -58,7 +109,7 @@
     [ ## About Section Start ]
 --------------------------------------------------------------*/
 .about {
-    padding: 0 0 10rem;
+    padding: 10rem 0;
     overflow: hidden;
     .section-content {
         p {
@@ -82,12 +133,18 @@
     }
     .section-image {
         text-align: center;
+        @include lg-up {
+            width: 150%;
+        }
         @include xl-up {
-            width: 120%;
+            width: 140%;
+        }
+        @include xxl-up {
+            width: 115%;
         }
         img {
-            @include xl-down {
-                max-width: 60rem;
+            @include lg-down {
+                width: 60rem;
             }
         }
     }

@@ -54,9 +54,17 @@ html {
   }
 }
 
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
 body {
   font-family: var(--font-din);
   font-size: 1.6rem;
+}
+
+.has-scroll-smooth body {
+  overflow: hidden;
 }
 
 p {
@@ -280,16 +288,9 @@ h4 a:hover {
   z-index: 1024;
   background-color: #003594;
   transition: all 0.3s ease-in-out;
-  opacity: 0;
-  visibility: hidden;
 }
 .topbutton:hover {
   color: var(--color__white);
-}
-.topbutton.btn-show {
-  opacity: 1;
-  visibility: visible;
-  bottom: 3rem;
 }
 
 .btn_primary {
@@ -493,14 +494,21 @@ textarea.form-control:focus {
     [ ## Header ]
 --------------------------------------------------------------*/
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  position: relative;
   z-index: 1024;
   padding: 1.5rem 0;
   transition: all 0.25s ease;
   background-color: var(--color__white);
+  transition-delay: 0.9s;
+}
+header.unpinned {
+  transition-delay: 0s;
+  opacity: 0;
+}
+header.pinned {
+  opacity: 1;
+  transition-delay: 0s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.15);
 }
 header .nav-menu {
   display: flex;
@@ -589,9 +597,6 @@ header .menu-toggler {
     display: none;
   }
 }
-header.sticky {
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.15);
-}
 
 .mobile-menu {
   position: fixed;
@@ -651,32 +656,78 @@ header.sticky {
 /*--------------------------------------------------------------
     [ ## Hero Section Start ]
 --------------------------------------------------------------*/
-.hero__section {
-  margin-top: 12rem;
+.hero__section .swiper-wrapper {
+  transition-timing-function: linear;
 }
 .hero__section .swiper-slide {
   position: relative;
 }
 .hero__section .swiper-slide .slide-content {
-  max-width: 55rem;
-  padding: 10rem 0;
+  max-width: 50rem;
+  padding: 5rem 0 3rem;
+}
+@media screen and (min-width: 768px) {
+  .hero__section .swiper-slide .slide-content {
+    padding: 8rem 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__section .swiper-slide .slide-content {
+    padding: 10rem 0;
+    max-width: 55rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero__section .swiper-slide .slide-content {
+    padding: 13rem 0;
+  }
 }
 .hero__section .swiper-slide .slide-content .subtitle {
   color: var(--color__secondary);
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 500;
 }
+@media screen and (min-width: 1200px) {
+  .hero__section .swiper-slide .slide-content .subtitle {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero__section .swiper-slide .slide-content .subtitle {
+    font-size: 2.8rem;
+  }
+}
 .hero__section .swiper-slide .slide-content .title {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: bold;
   color: var(--color__primary);
   line-height: 1.2;
   margin: 2rem 0 0.5rem;
 }
+@media screen and (min-width: 992px) {
+  .hero__section .swiper-slide .slide-content .title {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__section .swiper-slide .slide-content .title {
+    font-size: 6rem;
+  }
+}
 .hero__section .swiper-slide .slide-content p {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   color: var(--color__secondary);
   font-weight: 500;
+}
+@media screen and (min-width: 1400px) {
+  .hero__section .swiper-slide .slide-content p {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__section .swiper-slide .slide-content p {
+    font-size: 2rem;
+  }
 }
 .hero__section .swiper-slide .slide-content .button-group {
   margin-top: 3rem;
@@ -685,17 +736,48 @@ header.sticky {
   padding: 1.5rem 3rem;
 }
 .hero__section .swiper-slide .slide-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  width: 90rem;
-  height: 100%;
+  height: 30rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-clip-path: url(#heroClipPath);
-  clip-path: url(#heroClipPath);
+}
+@media screen and (min-width: 576px) {
+  .hero__section .swiper-slide .slide-image {
+    height: 40rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__section .swiper-slide .slide-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    max-width: 50rem;
+    height: 100%;
+    -webkit-clip-path: url(#heroClipPath);
+    clip-path: url(#heroClipPath);
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero__section .swiper-slide .slide-image {
+    max-width: 60rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__section .swiper-slide .slide-image {
+    max-width: 70rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero__section .swiper-slide .slide-image {
+    max-width: 100rem;
+  }
+}
+.hero__section .heroClip {
+  position: absolute;
+  width: 0;
+  height: 0;
 }
 
 /*--------------------------------------------------------------
@@ -705,7 +787,7 @@ header.sticky {
     [ ## About Section Start ]
 --------------------------------------------------------------*/
 .about {
-  padding: 0 0 10rem;
+  padding: 10rem 0;
   overflow: hidden;
 }
 .about .section-content p {
@@ -732,14 +814,24 @@ header.sticky {
 .about .section-image {
   text-align: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .about .section-image {
-    width: 120%;
+    width: 150%;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
+  .about .section-image {
+    width: 140%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .about .section-image {
+    width: 115%;
+  }
+}
+@media screen and (max-width: 991px) {
   .about .section-image img {
-    max-width: 60rem;
+    width: 60rem;
   }
 }
 .about .states_wrapper {
