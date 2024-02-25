@@ -664,7 +664,7 @@ header .menu-toggler {
 }
 .hero__section .swiper-slide .slide-content {
   max-width: 50rem;
-  padding: 5rem 0 3rem;
+  padding: 8rem 0 3rem;
 }
 @media screen and (min-width: 768px) {
   .hero__section .swiper-slide .slide-content {
@@ -702,11 +702,12 @@ header .menu-toggler {
   font-weight: bold;
   color: var(--color__primary);
   line-height: 1.2;
-  margin: 2rem 0 0.5rem;
+  margin: 1rem 0 0.5rem;
 }
 @media screen and (min-width: 992px) {
   .hero__section .swiper-slide .slide-content .title {
     font-size: 5rem;
+    margin: 2rem 0 0.5rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -791,12 +792,17 @@ header .menu-toggler {
   overflow: hidden;
 }
 .about .section-content p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.5;
 }
 .about .section-content p + p {
   margin-top: 1.5rem;
+}
+@media screen and (min-width: 1400px) {
+  .about .section-content p {
+    font-size: 1.6rem;
+  }
 }
 .about .row {
   --bs-gutter-x: 3rem;
@@ -1214,6 +1220,7 @@ header .menu-toggler {
 .speakers_panel .speakers-item h6, .speakers_panel .speakers-item p {
   font-size: 1.4rem;
   font-weight: 500;
+  line-height: 1.5;
 }
 @media screen and (min-width: 576px) {
   .speakers_panel .speakers-item h6, .speakers_panel .speakers-item p {
