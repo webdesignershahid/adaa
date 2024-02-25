@@ -4,10 +4,10 @@
     /* ============================================================ */
     /* Tooltip
     /* ============================================================ */
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
+    // var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    // var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    //     return new bootstrap.Tooltip(tooltipTriggerEl)
+    // })
 
     /* ============================================================ */
     /* Mobile Menu Integration
@@ -54,24 +54,33 @@
             fixed_top.removeClass("sticky");
         }
     });
-    $('a.onpageLink[href*="#"]:not([href="#"])').on('click', function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-                $('html,body').animate({
-                  scrollTop: target.offset().top - 120,
-                }, 100);
-                return false;
-            }
-        }
-    });
+    // $('a.onpageLink[href*="#"]:not([href="#"])').on('click', function() {
+    //     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
+    //         var target = $(this.hash);
+    //         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    //         if (target.length) {
+    //             $('html,body').animate({
+    //               scrollTop: target.offset().top - 120,
+    //             }, 100);
+    //             return false;
+    //         }
+    //     }
+    // });
     /* ============================================================ */
     /* Swiper Slider Init
     /* ============================================================ */
+    var heroSlider = new Swiper('.heroSlider', {
+        slidesPerView:1,
+        loop:1,
+        speed: 1000,
+        autoplay:{
+            delay: 5000,
+        },
+        effect: 'fade',
+    });
     var partnerSlider = new Swiper('#partnerSlider', {
         spaceBetween: 30,
-        slidesPerView: 2,
+        slidesPerView: 3,
         loop: 1,
         speed: 3000,
         autoplay: {

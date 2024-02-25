@@ -70,11 +70,6 @@
         @content;
     }
 }
-@mixin tab-up {
-    @media screen and (min-width: 1024px) {
-        @content;
-    }
-}
 @mixin xl-up {
     @media screen and (min-width: 1200px) {
         @content;

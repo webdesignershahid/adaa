@@ -2,7 +2,53 @@
     [ ## Hero Section Start ]
 --------------------------------------------------------------*/
 .hero__section {
-    margin-top: 15rem;
+    margin-top: 12rem;
+
+    .swiper-slide {
+        position: relative;
+        .slide-content {
+            max-width: 55rem;
+            padding: 10rem 0;
+            .subtitle {
+                color: var(--color__secondary);
+                font-size: 2.8rem;
+                font-weight: 500;
+            }
+            .title {
+                font-size: 6rem;
+                font-weight: bold;
+                color: var(--color__primary);
+                line-height: 1.2;
+                margin: 2rem 0 .5rem;
+            }
+            p {
+                font-size: 2.4rem;
+                color: var(--color__secondary);
+                font-weight: 500;
+            }
+
+            .button-group {
+                margin-top: 3rem;
+
+                a {
+                    padding: 1.5rem 3rem;
+                }
+            }
+        }
+        .slide-image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            width: 90rem;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            -webkit-clip-path: url(#heroClipPath);
+            clip-path: url(#heroClipPath);
+        }
+    }
 }
 /*--------------------------------------------------------------
     [ Hero Section End ]
@@ -12,7 +58,7 @@
     [ ## About Section Start ]
 --------------------------------------------------------------*/
 .about {
-    padding: 10rem 0;
+    padding: 0 0 10rem;
     overflow: hidden;
     .section-content {
         p {
@@ -25,10 +71,25 @@
         }
     }
     .row {
-        --bs-gutter-x: 5rem
+        --bs-gutter-x: 3rem;
+        @include lg-down {
+            --bs-gutter-y: 4rem;
+        }
+        @include xxl-up {
+            --bs-gutter-x: 5rem;
+
+        }
     }
     .section-image {
-        width: 120%;
+        text-align: center;
+        @include xl-up {
+            width: 120%;
+        }
+        img {
+            @include xl-down {
+                max-width: 60rem;
+            }
+        }
     }
     .states_wrapper{
         margin-top: 10rem;
@@ -36,46 +97,84 @@
     .state-item {
         border: .1rem solid var(--color__primary);
         position: relative;
-        padding: 5rem 4rem;
+        padding: 3rem 1rem;
         text-align: center;
+        @include md-up {
+            padding: 5rem 2rem;
+        }
+        @include xl-up {
+            padding: 5rem 4rem;
+        }
 
-        .icon {
-            max-height: 10rem;
+        .icon img {
+            max-height: 6rem;
+            @include md-up {
+                max-height: 8rem;
+            }
+            @include xxl-up {
+                max-height: 10rem;
+            }
         }
         .number {
             font-weight: bold;
-            font-size: 6rem;
+            font-size: 3.4rem;
             color: var(--color__primary);
+            margin-top: 1rem;
+            @include xl-up {
+                font-size: 5rem;
+            }
+            @include xxl-up {
+                font-size: 6rem;
+            }
         }
         p {
             font-size: 1.8rem;
             margin-top: 1rem;
+            @include sm-down {
+                font-size: 1.6rem;
+            }
         }
 
         &::before {
             content: '';
             background: var(--color__white) url(../images/site-icon.svg);
-            width: 5.7rem;
-            height: 5.7rem;
             position: absolute;
-            top: -2.8rem;
             right: 1.5rem;
+            top: -2.5rem;
+            width: 4.5rem;
+            height: 4.5rem;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            @include md-up {
+                top: -2.3rem;
+            }
+            @include xl-up {
+                width: 5.7rem;
+                height: 5.7rem;
+                top: -2.8rem;
+            }
         }
         &::after {
             content: '';
             background: var(--color__white) url(../images/site-icon.svg);
-            width: 5.7rem;
-            height: 5.7rem;
-            position: absolute;
-            bottom: -2.8rem;
             left: 1.5rem;
+            position: absolute;
+            bottom: -2.5rem;
+            width: 4.5rem;
+            height: 4.5rem;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             transform: scaleX(-1);
+            @include md-up {
+                bottom: -2.3rem;
+            }
+            @include xl-up {
+                width: 5.7rem;
+                height: 5.7rem;
+                bottom: -2.8rem;
+            }
         }
     }
 }
@@ -91,27 +190,45 @@
     background: rgb(0,53,148);
     background: linear-gradient(90deg, rgba(0,53,148,1) 0%, rgba(67,133,191,1) 85%, rgba(155,203,235,1) 100%);
 
-
     .section-content {
         text-align: center;
         color: var(--color__white);
     }
     .title {
         font-weight: bold;
-        font-size: 5rem;
+        font-size: 3.4rem;
         margin-bottom: 1rem;
         filter: drop-shadow(0px 4px 12px rgba(#000, 0.3));
         
+        @include lg-up {
+            font-size: 4.4rem;
+        }
+        @include xl-up {
+            font-size: 5rem;
+        }
     }
     .timer {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 5rem;
+        gap: 2rem;
         filter: drop-shadow(0px 4px 12px rgba(#000, 0.3));
+
+        @include xl-up {
+            gap: 3rem;
+        }
+        @include xxl-up {
+            gap: 5rem;
+        }
     }
     .timer_item {
-        font-size: 5rem;
+        font-size: 2.4rem;
+        @include lg-up {
+            font-size: 3.6rem;
+        }
+        @include lg-up {
+            font-size: 5rem;
+        }
     }
 }
 /*--------------------------------------------------------------
@@ -123,9 +240,127 @@
 --------------------------------------------------------------*/
 .agenda {
     padding: 10rem 0;
+    .agenda_tab_wrapper {
+        @include lg-up {
+            display: flex;
+            align-items: flex-start;
+        }
+        @include xxl-up {
+            max-width: 85%;
+            margin: 0 auto;
+        }
+        .nav {
+            flex: 0 0 20rem;
+            @include lg-up {
+                flex-direction: column;
+                position: sticky;
+                top: 10rem;
+            }
+            @include xl-up {
+                flex: 0 0 25rem;
+            }
+            @include xxl-up {
+                flex: 0 0 30rem;
+                top: 12rem;
+            }
 
+            .nav-link {
+                background-color: var(--color__secondary);
+                border-radius: 0;
+                padding: 1.5rem 4rem;
+                color: var(--color__white);
+                @include lg-up {
+                    padding: 2rem;
+                }
+                &.active {
+                    background-color: var(--color__primary);
+                }
+                h5 {
+                    font-size: 2rem;
+                    font-weight: bold;
+                    @include xl-up {
+                        font-size: 2.5rem ;
+                    }
+                    @include xxl-up {
+                        font-size: 3rem ;
+                    }
+                }
+                p {
+                    font-size: 1.6rem;
+                    @include xxl-up {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+        .tab-content {
+            flex: 1;
+            background-color: var(--color__white);
+            padding: 3rem 2rem;
+            box-shadow: .4rem .4rem 1.5rem 0 rgba(0,0,0,0.25);
+            -webkit-box-shadow: .4rem .4rem 1.5rem 0 rgba(0,0,0,0.25);
+            -moz-box-shadow: .4rem .4rem 1.5rem 0 rgba(0,0,0,0.25);
+            border-radius: 0 1rem 1rem 1rem;
+            @include sm-up {
+                padding: 4rem 5rem;
+            }
+            @include md-up {
+                padding: 5rem 6rem;
+            }
+            @include xxl-up {
+                padding: 7rem 8rem;
+            }
 
-    
+            .timeline {
+                & + .timeline {
+                    margin-top: 5rem;
+                }
+
+                @include md-up {
+                    display: flex;
+                    align-items: flex-start;
+                }
+
+                .time {
+                    flex: 0 0 20rem;
+                    color: var(--color__primary);
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
+                .description {
+                    flex: 1;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    @include xxl-up {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    .download-button {
+        margin-top: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+
+        img {
+            @include xl-down {
+                width: 4.5rem;
+            }
+        }
+        .flip-x {
+            transform: scaleX(-1)
+        }
+        a {
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+    }
 }
 /*--------------------------------------------------------------
     [ Agenda End ]
@@ -137,14 +372,25 @@
 .speakers_panel {
     background-color: rgba(#003594, 0.05);
     padding: 10rem 0;
-
+    overflow: hidden;
     .row {
-        --bs-gutter-x: 5rem;
+        --bs-gutter-y: 2rem;
+        --bs-gutter-x: 2rem;
         justify-content: center;
+        @include xl-up {
+            --bs-gutter-x: 5rem;
+
+        }
     }
     .speakers-row {
         & + .speakers-row {
-            margin-top: 5rem;
+            margin-top: 0rem;
+            @include xl-up {
+                margin-top: 3rem;
+            }
+            @include xxl-up {
+                margin-top: 5rem;
+            }
         }
     }
     .speakers-item {
@@ -152,7 +398,9 @@
         text-align: right;
         cursor: pointer;
         img {
-            max-width: 39rem;
+            @include xxl-up {
+                max-width: 39rem;
+            }
         }
         .text {
             position: absolute;
@@ -161,12 +409,19 @@
             background-color: var(--color__secondary);
             padding: 1rem 1rem;
             text-align: center;
-            width: 80%;
+            width: 95%;
+            @include sm-up {
+                width: 80%;
+            }
         }
 
         h6, p {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             font-weight: 500;
+
+            @include sm-up {
+                font-size: 1.6rem;
+            }
         }
     }
     .load-more {
@@ -185,7 +440,13 @@
     [ ## Speakers Panel Start ]
 --------------------------------------------------------------*/
 .partners {
-    padding: 15rem 0 12rem;
+    padding: 8rem 0;
+    @include md-up {
+        padding: 10rem 0;
+    }
+    @include xxl-up {
+        padding: 15rem 0 12rem;
+    }
 
     .swiper-wrapper {
         transition-timing-function: linear;

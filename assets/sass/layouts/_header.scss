@@ -19,8 +19,12 @@ header {
         gap: 1.2rem;
         a {
             font-family: var(--font-dinpro);
-            padding: 1rem 1.7rem;
+            padding: 1rem 1rem;
             transition: all 0.25s;
+            
+            @include xl-up {
+                padding: 1rem 1.7rem;
+            }
 
             &:hover {
                 color: var(--color__primary);
@@ -67,10 +71,12 @@ header {
         justify-content: space-between;        
     }
     .site-logo {
+        width: 4rem;
         outline: none;
         user-select: none;
-        @include sm-down {
-            max-width: 4rem;
+        
+        @include xxl-up {
+            width: 5rem;
         }
     }
     .menu-toggler {
